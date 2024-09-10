@@ -1,50 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-:root {
-    --background-color: #000;
-    --primary-color: #EEEEEE;
-    --secondary-color: #9290C3;
-    --hover--button: #070F2B;
-    --title-font: "Krona One", sans-serif;
-    --text-font: "Montserrat", sans-serif;
-}
-
-body {
-    color: var(--primary-color);
-    background-color: var(--background-color);
-}
-
-.cabecalho {
+header {
     padding: 2% 0% 0% 15%;
 }
 
-.cabecalho__menu {
+.navigation-bar {
     display: flex;
     gap: 80px;
 }
 
-.cabecalho__menu__link {
+.link-nav {
     font-family: var(--text-font);
     font-weight: 600;
-    font-size: 1.5rem; 
+    font-size: 2rem; 
     color: var(--secondary-color);
     text-decoration: none;   
 }
 
-.apresentacao {
+main {
     padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.apresentacao__conteudo {
+.introduction {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -53,17 +31,17 @@ body {
 
 }
 
-.apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
+h1 {
+    font-size: 3.5rem;
     font-family: var(--title-font);
 }
 
-.titulo-destaque {
+strong {
     color: var(--secondary-color);
 }
 
-.apresentacao__conteudo__texto {
-    font-size: 1.5rem;
+.text_introduction {
+    font-size: 2.5rem;
     font-family: var(--text-font);
     font-weight: 400;
 }
@@ -72,7 +50,7 @@ body {
     width: 32px;
 }
 
-.apresentacao__links {
+.social-media {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -80,19 +58,19 @@ body {
     gap: 32px;
 }
 
-.apresentacao__links__subtitulo {
+.call-social-media {
     font-family: var(--title-font);
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
-.apresentacao__links__link {
+.social-media-link {
     display: flex;
     justify-content: center;
     gap: 16px;
     width: 378px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--primary-color);
@@ -102,30 +80,27 @@ body {
     border-radius: 8px;
 }
 
-.apresentacao__links__link:hover {
+.social-media-link:hover {
     background-color: var(--hover--button);
 }
 
-.foto-perfil{
+.profile-picture{
     width: 380px;
     border-radius: 50%;
     border: solid 3px var(--secondary-color);
     margin-bottom: 10%;
 }
 
-.rodape {
+footer {
+    display: flex;
+    justify-content: space-around;
     color: var(--background-color);
     background-color: var(--secondary-color);
     padding: 24px;
     text-align: center;
     font-family: var(--text-font);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
 }
 
 footer a {
@@ -133,21 +108,21 @@ footer a {
 }
 
 @media (max-width:  1200px) {
-    .cabecalho {
+    .header {
         padding: 10%;
 
     }
 
-    .cabecalho__menu {
+    .header {
         justify-content: center;
     }
 
-    .apresentacao {
+    .main {
         flex-direction: column-reverse;
         padding: 5%;
     }
 
-    .apresentacao__conteudo {
+    .introduction {
         width: auto;
     }
 
